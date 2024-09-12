@@ -19,7 +19,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/module_status_card"
-                android:visible="gone"
+                android:visibility="gone"
                 style="@style/DefaultCard">
 
                 <LinearLayout
