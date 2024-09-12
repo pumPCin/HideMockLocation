@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
      * Check if this module is enabled in LSPosed
      *
      * @param binding Pass ActivityMainBinding object as parameter
-     */
+     
     private void setModuleState(ActivityMainBinding binding) {
         if (isModuleEnabled()) {
             binding.moduleStatusCard.setCardBackgroundColor(getColor(R.color.purple_500));
@@ -196,7 +196,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
      * Self-hook method.
      * Logging and Boolean object are present to avoid ART optimization.
      */
