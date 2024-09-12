@@ -41,7 +41,7 @@ jobs:
       working-directory : ${{ github.workspace }}/app
       run : |
         echo "Get Latest Release Tag"
-        LATESTRELEASETAG='3'
+        LATESTRELEASETAG='300'
         echo "$LATESTRELEASETAG"
         echo "LATESTRELEASETAG=$LATESTRELEASETAG" >> $GITHUB_ENV
     

@@ -9,7 +9,7 @@ android {
         applicationId "com.google.android.hml"
         minSdk 29
         targetSdk 34
-        versionCode 300
+        versionCode 3
         versionName "3"
     }
 
