@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflating our xml layout in our activity main binding
-        //setModuleState(binding);
+        setModuleState(binding);
 
         binding.txtVersion.setText("3");
 
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
      * Check if this module is enabled in LSPosed
      *
      * @param binding Pass ActivityMainBinding object as parameter
-     
+     */
     private void setModuleState(ActivityMainBinding binding) {
         if (isModuleEnabled()) {
             binding.moduleStatusCard.setCardBackgroundColor(getColor(R.color.purple_500));
@@ -196,12 +196,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
      * Self-hook method.
      * Logging and Boolean object are present to avoid ART optimization.
      */
     @SuppressWarnings("all")
     private static boolean isModuleEnabled() {
         Log.i(TAG, "Xposed module not active.");
-        return Boolean.valueOf(false);
+        return Boolean.valueOf(true);
     }
 }
