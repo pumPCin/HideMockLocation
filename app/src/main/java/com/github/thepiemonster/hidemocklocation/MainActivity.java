@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflating our xml layout in our activity main binding
         setModuleState(binding);
 
-        binding.txtVersion.setText('2.2.0');
+        binding.txtVersion.setText("2.2.0");
 
         binding.menuDetectionTest.setOnClickListener(view -> {
             Log.v(TAG, "View MenuDetectionTest");
