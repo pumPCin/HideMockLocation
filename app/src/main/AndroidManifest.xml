@@ -18,6 +18,8 @@
             android:exported="true"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
             </intent-filter>
         </activity>
