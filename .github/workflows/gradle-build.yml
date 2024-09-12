@@ -29,11 +29,11 @@ jobs:
       with:
         fetch-depth: 0
 
-#    - name: Set up JDK
-#      uses: actions/setup-java@v2
-#      with:
-#        java-version: '11'
-#        distribution: 'temurin'
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
     
     - name: Get Latest Release Tag
       working-directory : ${{ github.workspace }}/app
