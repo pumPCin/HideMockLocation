@@ -19,6 +19,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/module_status_card"
+                android:visible="gone"
                 style="@style/DefaultCard">
 
                 <LinearLayout
@@ -68,7 +69,6 @@
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
-
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -108,12 +108,7 @@
                         android:text="@string/title_about" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/txt_version"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Version 3" />
 </LinearLayout>
