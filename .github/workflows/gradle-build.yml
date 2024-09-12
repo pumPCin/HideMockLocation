@@ -72,13 +72,6 @@ jobs:
         echo "Latest Release Tag: $LATESTRELEASETAG"
         if [ "$VERSIONNAME" = "$LATESTRELEASETAG" ]; then echo "Current Gradle Version is the same as GitHubs latest Release tag. This will create a tagging conflict when PR is merged due to every PR creating a release. This can be resolved by updating the build.gradle file."; exit 1; else echo "All clear!"; fi
            
-    - name: Decode Keystore
-      id: decode_keystore
-      uses: timheuer/base64-to-file@v1
-      with:
-        fileName: 'keystore/HideMockLocation.jks'
-        encodedString: ${{ secrets.SIGNING_STORE_PASSWORD }}
-
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v3
       with:
@@ -89,10 +82,6 @@ jobs:
     
     - name: Execute Gradle build
       run: ./gradlew build
-      env:
-        SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
-        SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
-        SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
         
 #    - name: Build with Gradle
 #      uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
