@@ -1,4 +1,4 @@
-package com.github.thepiemonster.hidemocklocation;
+package com.google.android.hml;
 
 import androidx.appcompat.app.AppCompatActivity;
 

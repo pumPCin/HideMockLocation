@@ -41,7 +41,7 @@ jobs:
       working-directory : ${{ github.workspace }}/app
       run : |
         echo "Get Latest Release Tag"
-        LATESTRELEASETAG='220'
+        LATESTRELEASETAG='3'
         echo "$LATESTRELEASETAG"
         echo "LATESTRELEASETAG=$LATESTRELEASETAG" >> $GITHUB_ENV
     
@@ -55,7 +55,7 @@ jobs:
       working-directory : ${{ github.workspace }}/app
       run : |
         echo "Get Gradle VersionName"
-        VERSIONNAME='2.2.0'
+        VERSIONNAME='3'
         echo "$VERSIONNAME"
         echo "VERSIONNAME=$VERSIONNAME" >> $GITHUB_ENV
   

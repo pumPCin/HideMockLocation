@@ -1,4 +1,4 @@
-package com.github.thepiemonster.hidemocklocation;
+package com.google.android.hml;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.app.ActivityCompat;
 
-import com.github.thepiemonster.hidemocklocation.databinding.ActivityMainBinding;
+import com.google.android.hml.databinding.ActivityMainBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflating our xml layout in our activity main binding
         setModuleState(binding);
 
-        binding.txtVersion.setText("2.2.0");
+        binding.txtVersion.setText("3");
 
         binding.menuDetectionTest.setOnClickListener(view -> {
             Log.v(TAG, "View MenuDetectionTest");

@@ -1,6 +1,6 @@
-package com.github.thepiemonster.hidemocklocation;
+package com.google.android.hml;
 
-import static com.github.thepiemonster.hidemocklocation.Common.loadClassIfExist;
+import static com.google.android.hml.Common.loadClassIfExist;
 
 import android.app.Service;
 import android.location.LocationManager;

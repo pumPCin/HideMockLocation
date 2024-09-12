@@ -6,11 +6,11 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.github.thepiemonster.hidemocklocation"
+        applicationId "com.google.android.hml"
         minSdk 29
         targetSdk 34
-        versionCode 220
-        versionName "2.2.0"
+        versionCode 3
+        versionName "3"
     }
 
     buildTypes {
@@ -32,7 +32,7 @@ android {
     buildFeatures {
         viewBinding true
     }
-    namespace 'com.github.thepiemonster.hidemocklocation'
+    namespace 'com.google.android.hml'
 }
 
 dependencies {
