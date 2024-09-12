@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflating our xml layout in our activity main binding
-        setModuleState(binding);
+        //setModuleState(binding);
 
         binding.txtVersion.setText("3");
 
