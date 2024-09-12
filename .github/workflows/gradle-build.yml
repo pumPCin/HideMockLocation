@@ -39,7 +39,7 @@ jobs:
       working-directory : ${{ github.workspace }}/app
       run : |
         echo "Get Latest Release Tag"
-        LATESTRELEASETAG=3
+        LATESTRELEASETAG='220'
         echo "$LATESTRELEASETAG"
         echo "LATESTRELEASETAG=$LATESTRELEASETAG" >> $GITHUB_ENV
     
@@ -53,7 +53,7 @@ jobs:
       working-directory : ${{ github.workspace }}/app
       run : |
         echo "Get Gradle VersionName"
-        VERSIONNAME=$(grep 'versionName' build.gradle | awk '{print $2}' | tr -d '"')
+        VERSIONNAME='2.2.0'
         echo "$VERSIONNAME"
         echo "VERSIONNAME=$VERSIONNAME" >> $GITHUB_ENV
   
